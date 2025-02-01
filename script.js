@@ -1,22 +1,12 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+// Getting all list items
+const menuItems = document.querySelectorAll("#menu li");
 
-// Fade-in animation for sections on scroll
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-        }
-    });
-});
+// Handling the click event on the navigation
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        menuItems.forEach(i => i.classList.remove('active'));
 
-document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
-});
+        item.classList.add('active');
+    })
+})
+
