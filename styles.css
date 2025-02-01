@@ -58,6 +58,7 @@ body {
 .hero_image {
     flex: 1;
     text-align: center;
+    margin-top: 5%;
 }
 
 .avatar_image {
