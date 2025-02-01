@@ -69,8 +69,13 @@ body {
     vertical-align: middle;
 }
 
-.nav_bar {
+.navigation {
     width: 70%;
+    margin: auto;
+}
+
+.nav_bar {
+    width: 100%;
     margin: auto;
     border: 0.25vw solid #45A29F;
     border-radius: 0.75vw;
@@ -82,7 +87,7 @@ body {
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin: 0.35vw;
+    margin: 0.30vh;
     height: 100%;
     gap: 5px;
     align-items: center;
@@ -111,7 +116,8 @@ body {
 }
 
 .projects_section {
-    width: 70%;
+    /* background-color: #202833; */
+    width: 100%;
     margin-top: clamp(20px, 6vw, 40px);
     margin-bottom: clamp(50px, 12vw, 100px);
     margin-left: auto;
@@ -183,6 +189,19 @@ body {
 .project h2 span {
     color: #0B0C10;
     font-size: clamp(12px, 1.5vw, 160px);
+}
+
+.skills_section {
+    background-color: #F5F5F5;
+}
+
+/* Change the navigation tab relative the the menu item selected */
+.section {
+    display: none;
+}
+
+.active_section {
+    display: flex;
 }
 
 
