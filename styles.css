@@ -25,23 +25,24 @@ body {
 }
 
 .hero {
-    width: 60%;
+    width: 70%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 4vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .hero_description {
-    flex: 1;
+    flex: 1.25;
+    margin-left: 2vw;
 }
 
 .big_header {
     color: #66FCF1;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 900;
-    font-size: clamp(24px, 8vw, 160px);
+    font-size: clamp(24px, 10vw, 160px);
     margin: 0;
 }
 
@@ -55,7 +56,7 @@ body {
 }
 
 .hero_image {
-    flex: 1.25;
+    flex: 1;
     text-align: center;
 }
 
@@ -67,7 +68,7 @@ body {
 }
 
 .nav_bar {
-    width: 60%;
+    width: 70%;
     margin: auto;
     border: 3px solid #45A29F;
     border-radius: 15px;
@@ -82,6 +83,7 @@ body {
     margin: 5px;
     height: 100%;
     gap: 5px;
+    align-items: center;
 }
 
 
@@ -91,7 +93,7 @@ body {
     font-weight: 900;
     text-align: center;
     padding: 1vw 1.25vw 1vw 1.25vw;
-    border-radius: 15px;
+    border-radius: 5px;
     flex: 1;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -105,5 +107,77 @@ body {
     text-decoration: none;
     color: #F5F5F5;
 }
+
+.projects_section {
+    width: 70%;
+    margin: 6vh auto 12vh auto;
+    border:3px solid #45A29F;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:4vw 0 4vw 0;
+    gap: 4vw;
+}
+
+.project {
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap: 4vw;
+}
+
+.project_image {
+    flex: 1;
+    text-align: center;
+}
+
+.project_image img {
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
+    vertical-align: middle;
+
+}
+
+.project_description {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.project h1 {
+    font-family: 'Roboto Condensed', sans serif;
+    font-size: clamp(24px, 3vw, 160px);
+    color: #45A29F;
+    margin: 0;
+}
+
+.project p {
+    font-family: 'Open Sans', sans serif;
+    font-size: clamp(12px, 1.5vw, 100px);
+    margin: 0;
+}
+
+.project h2 {
+    font-family: 'Open Sans', sans serif;
+    font-weight: 400;
+    font-size: clamp(16px, 1.75vw, 160px);
+    color: #45A29F;
+    margin: 0;
+}
+
+.project h2 span {
+    color: #0B0C10;
+    font-size: clamp(14px, 1.5vw, 160px);
+}
+
 
 
