@@ -249,7 +249,10 @@ a {
 .logo_container {
     padding: 10%;
     border-radius: 15px;
-    background: linear-gradient(to bottom,#87fcf5, #202833 );
+    background-color: #F5F5F5;
+    box-shadow: 
+    10px 10px 15px rgba(0, 0, 0, 0.4), 
+    -1px -1px 2px #66FCF1; /* Glowing effect on top-left */
     margin-bottom: 5%;
     aspect-ratio: 1 / 1;
     display: flex;
