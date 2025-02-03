@@ -1,6 +1,7 @@
 // Getting all list items
 const menuItems = document.querySelectorAll("#menu li");
 const navSections = document.querySelectorAll(".section")
+const sectionsTab = document.querySelector(".sections_tab");
 
 // Function to activate a section
 function activateSection(index) {
@@ -22,6 +23,13 @@ document.addEventListener("DOMContentLoaded", () =>{
 menuItems.forEach((item, index) => {
     item.addEventListener('click', () => {
         activateSection(index);
+
+        if(index === 1 || index === 2){
+            sectionsTab.classList.add('dark_background');
+        }
+        else if (index === 0){
+            sectionsTab.classList.remove('dark_background');
+        }
     })
 })
 

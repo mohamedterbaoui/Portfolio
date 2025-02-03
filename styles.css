@@ -63,7 +63,7 @@ body {
 
 .avatar_image {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     min-width: 150px;
     height: auto;
     vertical-align: middle;
@@ -115,8 +115,7 @@ body {
     color: #F5F5F5;
 }
 
-.projects_section {
-    /* background-color: #202833; */
+.sections_tab {
     width: 100%;
     margin-top: clamp(20px, 6vw, 40px);
     margin-bottom: clamp(50px, 12vw, 100px);
@@ -124,11 +123,19 @@ body {
     margin-right: auto;
     border:3px solid #45A29F;
     border-radius: 15px;
+    padding:4vw 0 4vw 0;
+}
+
+.projects_section {
+    /* background-color: #202833; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:4vw 0 4vw 0;
     gap: 4vw;
+}
+
+a {
+    text-decoration: none;
 }
 
 .project {
@@ -142,6 +149,11 @@ body {
     align-items: center;
     padding: 5%;
     gap: 4vw;
+    transition: all 0.20s ease;
+}
+
+.project:hover {
+    border: 0.20vw solid #45A29F;
 }
 
 .project_image {
@@ -155,7 +167,6 @@ body {
     min-width: 150px;
     height: auto;
     vertical-align: middle;
-
 }
 
 .project_description {
@@ -176,6 +187,7 @@ body {
     font-family: 'Open Sans', sans serif;
     font-size: clamp(12px, 1.5vw, 100px);
     margin: 0;
+    color: #0B0C10;
 }
 
 .project h2 {
@@ -192,8 +204,67 @@ body {
 }
 
 .skills_section {
-    background-color: #F5F5F5;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    text-align: center;
 }
+
+.skills_section h1 {
+    font-family: 'Roboto Condensed', sans serif;
+    font-size: clamp(20px, 3vw, 160px);
+    color: #66FCF1;
+    margin: 0;
+}
+
+.skills_section h4 {
+    font-family: 'Open Sans', sans serif;
+    font-size: clamp(16px, 1.5vw, 160px);
+    font-weight: 400;
+    color: #F5F5F5;
+    margin: 0;
+}
+
+.skills_section p {
+    font-family: 'Open Sans', sans serif;
+    font-size: clamp(12px, 1vw, 160px);
+    color: #F5F5F5;
+    margin: 0;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 1vw;
+}
+
+.logo {
+    flex: 1 1 calc(33.33% - 2vw);
+    text-align: center;
+    max-width: 150px;
+
+}
+
+.logo_container {
+    padding: 10%;
+    border-radius: 15px;
+    background: linear-gradient(to bottom,#F1FFFE, #3E9491 );
+    margin-bottom: 5%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo_container img {
+    width: 100%;
+    min-width: 50px;
+    height: auto;
+}
+
+
 
 /* Change the navigation tab relative the the menu item selected */
 .section {
@@ -202,6 +273,116 @@ body {
 
 .active_section {
     display: flex;
+}
+
+.dark_background {
+    background-color: #202833;
+}
+
+@media (min-width:1441px) {
+    .hero  {
+        width: 60%;
+    }
+
+    .navigation {
+        width: 60%;
+    }
+
+    .big_header {
+        font-size: 8vw;
+    }
+    
+    .description {
+        font-size: 1.25vw;
+    }   
+
+
+    .project h1 {
+        font-size: 2.5vw;
+    }
+    
+    .project p {
+        font-size: 1.25vw;
+    }
+    
+    .project h2 {
+        font-size: 1.5vw;
+    }
+
+    .project h2 span {
+        font-size: 1.25vw;
+    }
+
+}
+
+@media (max-width:1440px) {
+    .hero  {
+        width: 50%;
+    }
+
+    .navigation {
+        width: 50%;
+    }
+
+    .big_header {
+        font-size: 6vw;
+    }
+    
+    .description {
+        font-size: 1.25vw;
+    }   
+
+
+    .project h1 {
+        font-size: 2vw;
+    }
+    
+    .project p {
+        font-size: 1vw;
+    }
+    
+    .project h2 {
+        font-size: 1.25vw;
+    }
+
+    .project h2 span {
+        font-size: 1vw;
+    }
+}
+
+@media (max-width:480px){
+    .hero {
+        width: 75%;
+    }
+
+    .navigation {
+        width: 75%;
+    }
+
+    .big_header {
+        font-size: 10vw;
+    }
+    
+    .description {
+        font-size: 2.5vw;
+    }   
+
+
+    .project h1 {
+        font-size: 5vw;
+    }
+    
+    .project p {
+        font-size: 2.5vw;
+    }
+    
+    .project h2 {
+        font-size: 3vw;
+    }
+
+    .project h2 span {
+        font-size: 2.5vw;
+    }
 }
 
 
