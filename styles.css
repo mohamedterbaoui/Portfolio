@@ -209,18 +209,10 @@ a {
     text-align: center;
 }
 
-.skills_section h1 {
+.title {
     font-family: 'Roboto Condensed', sans serif;
     font-size: clamp(20px, 3vw, 160px);
     color: #66FCF1;
-    margin: 0;
-}
-
-.skills_section h4 {
-    font-family: 'Open Sans', sans serif;
-    font-size: clamp(16px, 1.5vw, 160px);
-    font-weight: 400;
-    color: #F5F5F5;
     margin: 0;
 }
 
@@ -229,6 +221,15 @@ a {
     font-size: clamp(12px, 1vw, 160px);
     color: #F5F5F5;
     margin: 0;
+}
+
+#description {
+    font-family: 'Open Sans', sans serif;
+    font-size: clamp(12px, 1.25vw, 160px);
+    font-weight: 400;
+    color: #F5F5F5;
+    margin: 0;
+    hyphens: auto;
 }
 
 .logos {
@@ -267,6 +268,39 @@ a {
     height: auto;
 }
 
+.about_description {
+    text-align: center;
+    padding: 0 4vw 0 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.download_btn {
+    all: unset;
+    width: 30%;
+    min-width: 50px;
+    margin: auto;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    background-color: #45A29F;
+    color: #F5F5F5;
+    font-family: 'Roboto Condensed', sans serif;
+    font-size: clamp(12px, 1.25vw, 100px);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: #060F0F;
+}
+
+.download_btn:hover {
+    background-color: #306e6c;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
 
 
 /* Change the navigation tab relative the the menu item selected */
