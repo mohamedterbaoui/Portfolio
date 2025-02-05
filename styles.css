@@ -77,8 +77,8 @@ body {
 .nav_bar {
     width: 100%;
     margin: auto;
-    border: 0.25vw solid #45A29F;
-    border-radius: 0.75vw;
+    border: 0.20vw solid #45A29F;
+    border-radius: 0.5vw;
     background-color: #060F0F;
 }
 
@@ -149,11 +149,11 @@ a {
     align-items: center;
     padding: 5%;
     gap: 4vw;
-    transition: all 0.20s ease;
+    transition: all 0.5s ease;
 }
 
 .project:hover {
-    border: 0.20vw solid #45A29F;
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.6);
 }
 
 .project_image {
@@ -188,6 +188,7 @@ a {
     font-size: clamp(12px, 1.5vw, 100px);
     margin: 0;
     color: #0B0C10;
+    text-justify: auto;
 }
 
 .project h2 {
@@ -415,6 +416,9 @@ a {
         font-size: 2.75vw;
     }   
 
+    .nav_bar {
+        border-radius:10px;
+    }
 
     .project h1 {
         font-size: 2.5vw;
@@ -452,7 +456,11 @@ a {
     
     .description {
         font-size: 3.25vw;
-    }   
+    }
+
+    .nav_bar {
+        border-radius:8px;
+    }
 
 
     .project h1 {
