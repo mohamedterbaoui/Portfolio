@@ -149,11 +149,16 @@ a {
     align-items: center;
     padding: 5%;
     gap: 4vw;
-    transition: all 0.5s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .project:hover {
-    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.6);
+    /* box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.6); */
+    box-shadow: rgba(46, 240, 233, 0.4) 5px 5px,
+     rgba(46, 240, 233, 0.3) 10px 10px,
+      rgba(46, 240, 233, 0.2) 15px 15px,
+       rgba(46, 240, 233, 0.1) 20px 20px,
+        rgba(46, 240, 233, 0.05) 25px 25px;
 }
 
 .project_image {
