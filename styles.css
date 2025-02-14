@@ -253,9 +253,23 @@ a {
   width: 30%;
 }
 
-.btn-github {
-  display: inline-block;
+.project-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .project-btns {
+    gap: 4px;
+  }
+}
+
+.btn-github {
+  flex: 1;
+  margin-top: 0;
+  display: inline-block;
   padding: 10px 15px;
   background-color: #202833;
   color: white;
@@ -276,6 +290,32 @@ a {
 .btn-github:active {
   transform: translateY(1px);
   background-color: #1f2428;
+}
+
+.btn-project {
+  flex: 1;
+  margin-top: 0;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #45a29f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s, transform 0.2s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-project:hover {
+  background-color: #277572;
+  transform: translateY(-2px);
+}
+
+.btn-project:active {
+  transform: translateY(1px);
+  background-color: #1c5250;
 }
 
 .skills_section {
@@ -502,8 +542,13 @@ a {
   }
   .btn-github {
     display: inline-block;
-    margin-top: 10px;
     padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .btn-project {
+    padding: 5px 10px;
+    font-size: 10px;
   }
 }
 
@@ -543,9 +588,19 @@ a {
   .project h2 span {
     font-size: 4vw;
   }
+
+  .project-btns {
+    flex-direction: column;
+  }
+
   .btn-github {
     display: inline-block;
-    margin-top: 10px;
     padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .btn-project {
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }
