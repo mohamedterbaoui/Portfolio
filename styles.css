@@ -146,17 +146,30 @@ a {
   align-items: center;
   padding: 5%;
   transition: box-shadow 0.3s ease;
-  box-shadow: 3px 3px 15px 1px #66fcf1;
+  box-shadow: 1px 1px 10px 0 #66fcf1;
 }
 
 .disclaimer h1 {
   color: #f5f5f5;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .disclaimer p {
+  color: #f5f5f5;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .disclaimer h1 {
+    font-size: 1.5rem;
+  }
+
+  .disclaimer p {
+    font-size: 1rem;
+  }
 }
 
 .project {
